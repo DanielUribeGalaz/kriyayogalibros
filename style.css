@@ -1,3 +1,7 @@
+body {
+    background-image: url(./image/libreria.jpg);
+}
+
 .cardProducto {
     width: 200px;
     margin: 5px;
