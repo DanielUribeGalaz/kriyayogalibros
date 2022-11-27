@@ -50,6 +50,6 @@ finalizarCompra.onclick = () => {
         total = total + libro.price
     })
     alert(
-        `Escogiste ${carrito.length} libros y el total de tu compra es de $${total}`
+        `Escogiste ${carrito.length} libros y el total de tu compra es de ${total}`
     )
 }
