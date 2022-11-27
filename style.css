@@ -1,0 +1,20 @@
+.cardProducto {
+    width: 200px;
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin: 3% 0 5%;
+}
+
+#divProductos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonFinalizar {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
