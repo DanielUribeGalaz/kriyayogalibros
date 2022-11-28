@@ -1,24 +1,60 @@
-body {
-    background-image: url(./image/libreria.jpg);
+.imgProducto {
+    height: 200px;
+    object-fit: contain;
+    margin-top: 1rem;
 }
 
-.cardProducto {
-    width: 200px;
-    margin: 5px;
+.card {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    width: 320px;
+    height: 450px;
+    text-align: center;
+    background-color: hsl(208, 100%, 97%, 0.75);
+}
+
+button {
+    margin-bottom: 30px;
 }
 
 h1 {
-    text-align: center;
-    margin: 3% 0 5%;
+    margin: 30px 0 30px 0;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 70px;
 }
 
-#divProductos {
-    display: flex;
-    justify-content: space-around;
+h2 {
+    margin: 50px 0 10px 0;
 }
 
-.botonFinalizar {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
+h3 {
+    margin: 0 0 40px 0;
+}
+
+h4 {
+    font-family: 'Signika', sans-serif;
+}
+
+h5 {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+span {
+    font-weight: bold;
+}
+
+body{
+    background-image: url(image/sarasv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fondo {
+    background-color: hsl(208, 100%, 97%, 0.75);
+    border-radius: 5px;
+    padding: 5px 0 0 30px;
+    margin-bottom: 30px;
 }
