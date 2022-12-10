@@ -1,36 +1,21 @@
-class Producto{
-    constructor(id,name,author,editorial,price,pages,imagen){
-        this.id = id
-        this.name = name;
-        this.author = author;
-        this.editorial = editorial;
-        this.price = price;
-        this.pages = pages;
-        this.imagen = imagen;
-        this.cantidad = 1;
-    }
-}
 
 const productos = [];
 
-const autobiografiaDeUnYogui = new Producto (1,"Autobiografia De Un Yogui","Paramahansa Yogananda","Crystal Clarity Publishers",20000,562,"./image/autobiografia-de-un-yogui.jpg");
-productos.push(autobiografiaDeUnYogui);
-const secretosReveladosDeKriyaYoga = new Producto (2,"Secretos Revelados de Kriya Yoga","JC Stevens","Golden Swan Publishing",30000,376,"image/secretos-revelados.jpg");
-productos.push(secretosReveladosDeKriyaYoga);
-const elNuevoSendero = new Producto (3,"El Nuevo Sendero","Swami Kriyananda","Asociación Ananda Ediciones",20000,626,"./image/el-nuevo-sendero.jpg");
-productos.push(elNuevoSendero);
-const rayaYoga = new Producto (4,"Raya Yoga","Swami Kriyananda","Asociación Ananda Ediciones",25000,442,"image/raja-yoga-el-manual-completo-de-yoga-y-meditacion.jpg");
-productos.push(rayaYoga);
-const rajarsiJanakananda = new Producto (5,"Rajarsi Janakananda: Un Gran Yogui Occidental","Self-Realization Fellowship","Self-Realization Fellowship",12000,304,"./image/rajarsi.jpg");
-productos.push(rajarsiJanakananda);
-const soloDios = new Producto (6,"Sólo Dios","Self-Realization Fellowship","Self-Realization Fellowship",13000,341,"image/solodios.jpg");
-productos.push(soloDios);
-const dosRanasEnApuros = new Producto (7,"Dos Ranas en Apuros","Paramahansa Yogananda","Self-Realization Fellowship",26000,26,"./image/dosranas.jpg");
-productos.push(dosRanasEnApuros);
-const elVinoDelMistico = new Producto (8,"El vino del místico","Paramahansa Yogananda","Self-Realization Fellowship",20000,280,"./image/elvinomistico.jpg");
-productos.push(elVinoDelMistico)
-const mejda = new Producto (9,"Mejda","Sananda Lal Ghosh","Self-Realization Fellowship",24000,380,"./image/mejda.jpg");
-productos.push(mejda)
+fetch('./productos.json')
+  .then(response => response.json())
+  .then(data => {
+    // convierte los datos en un array
+    const array = Array.from(data);
+
+    productos.push(...array)
+    // aquí puedes trabajar con el array
+    mostrarProductos()
+  })
+
+
+  console.log(productos)
+
+
 
 let carrito = [];
 //Cargar cariito desde LocalStorage
@@ -151,6 +136,7 @@ const eliminarTodoElCarrito = () => {
 
     //Eliminar LocalStorage
     localStorage.clear();
+    localStorage.removeItem("cantidad",JSON.stringify(cantidad));
 }
 
 // Total de la compra

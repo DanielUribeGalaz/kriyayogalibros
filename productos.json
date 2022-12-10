@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Autobiografia De Un Yogui",
+        "author": "Paramahansa Yogananda",
+        "editorial": "Crystal Clarity Publishers",
+        "price": 20000,
+        "pages": 562,
+        "imagen": "./image/autobiografia-de-un-yogui.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "name": "Secretos Revelados de Kriya Yoga",
+        "author": "JC Stevens",
+        "editorial": "Golden Swan Publishing",
+        "price": 30000,
+        "pages": 376,
+        "imagen": "image/secretos-revelados.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "name": "El Nuevo Sendero",
+        "author": "Swami Kriyananda",
+        "editorial": "Asociación Ananda Ediciones",
+        "price": 20000,
+        "pages": 626,
+        "imagen": "./image/el-nuevo-sendero.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "name": "Raya Yoga",
+        "author": "Swami Kriyananda",
+        "editorial": "Asociación Ananda Ediciones",
+        "price": 25000,
+        "pages": 442,
+        "imagen": "image/raja-yoga-el-manual-completo-de-yoga-y-meditacion.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "name": "Rajarsi Janakananda: Un Gran Yogui Occidental",
+        "author": "Self-Realization Fellowship",
+        "editorial": "Self-Realization Fellowship",
+        "price": 12000,
+        "pages": 304,
+        "imagen": "./image/rajarsi.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "name": "Sólo Dios",
+        "author": "Self-Realization Fellowship",
+        "editorial": "Self-Realization Fellowship",
+        "price": 13000,
+        "pages": 341,
+        "imagen": "image/solodios.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "name": "Dos Ranas en Apuros",
+        "author": "Paramahansa Yogananda",
+        "editorial": "Self-Realization Fellowship",
+        "price": 26000,
+        "pages": 26,
+        "imagen": "./image/dosranas.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "name": "El vino del místico",
+        "author": "Paramahansa Yogananda",
+        "editorial": "Self-Realization Fellowship",
+        "price": 20000,
+        "pages": 280,
+        "imagen": "./image/elvinomistico.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "name": "Mejda",
+        "author": "Sananda Lal Ghosh",
+        "editorial": "Self-Realization Fellowship",
+        "price": 24000,
+        "pages": 380,
+        "imagen": "./image/mejda.jpg",
+        "cantidad": 1
+    }
+]
